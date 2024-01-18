@@ -4,7 +4,8 @@ Protocol for converting pdb from MD simulation to AMBER-type file with correspon
 After several procedures with Molecular Dynamics using GROMACS and CHARMM forcefield, we wanted to use specific geometry of MD simulation in QMMM calculations using ORCA.
 We decided to use amber forcefield for qmmm calculations, therefore, proper conversion of the files was necessary.
 # STEP-BY-STEP SOLUTION
-# 1. Save structure using VMD into pdb file. In our case we implied several solvent molecules using selection: _water within 5 of resname LIG_
+# 1. Save structure using VMD into pdb file. In our case we implied several solvent molecules using selection: 
+_water within 5 of resname LIG_
 # 2. Using CHARMM-GUI website, upload the structure and follow the procedure to use AMBER FF (ff19SB)
     The order of atoms in AMBER FF differ from CHARMM FF. This is why it is important to initially create CHARMM files using both of the ForceFields!!!
 # 3. Remove excess of solvent.
